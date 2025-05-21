@@ -5,14 +5,19 @@ session_start();
 $usuario = $_POST['usuario'];
 $senha = $_POST['senha'];
 
-$sql = "SELECT * FROM usuarios WHERE Usuario = ? OR Email = ?";
+exit("aqui");
+
+$sql = "SELECT * FROM usuarios WHERE Usuario = ? OR Senha = ?";
 $stmt = $conn->prepare($sql);
 $stmt->bind_param("ss", $usuario, $usuario);
 $stmt->execute();
 $res = $stmt->get_result();
 $user = $res->fetch_assoc();
 
-if ($user && password_verify($senha, $user['Senha'])) {
+echo '<pre>'; print_r($user); echo('</pre>');
+exit('aqui');
+
+if ($senha == $user['Senha'] ) {
     $_SESSION['usuario'] = $user['Usuario'];
     $_SESSION['usuario_id'] = $user['UsuarioID'];
     header("Location: index.php");
