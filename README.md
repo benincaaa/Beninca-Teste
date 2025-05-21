@@ -1,2 +1,2 @@
 # Trabalho-tecnico
-Conseguiii
+Durante o curso de técnico profissional, uma das atividades mais desafiadoras foi desenvolver esse site. No começo tive uma certa dificuldade, principalmente com a parte de programação em PHP e a conexão com o banco de dados porque era tudo muito novo para mim. Tive que entender como o código funcionava no servidor, como enviar e receber dados dos formulários e como conectar tudo isso com o banco de dados MySQL. Foram várias tentativas com erros, páginas que não carregavam e dados que não apareciam. Com a ajuda do professor Sandro e do meu colega/amigo Raphael, consegui atingir o objetivo da atividade, adquirindo e ampliando mais o meu entendimento da matéria e de como utiliza-la na prática.
